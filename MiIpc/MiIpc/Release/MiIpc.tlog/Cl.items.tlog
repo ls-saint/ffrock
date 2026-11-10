@@ -1,0 +1,11 @@
+F:\work\MiIot\MiIpc\GetOpt\getopt.c;F:\work\MiIot\MiIpc\MiIpc\Release\getopt.obj
+F:\work\MiIot\MiIpc\Http\mihttpserver.c;F:\work\MiIot\MiIpc\MiIpc\Release\mihttpserver.obj
+F:\work\MiIot\MiIpc\Http\miwebrtcbridge.c;F:\work\MiIot\MiIpc\MiIpc\Release\miwebrtcbridge.obj
+F:\work\MiIot\MiIpc\Http\mongoose.c;F:\work\MiIot\MiIpc\MiIpc\Release\mongoose.obj
+F:\work\MiIot\MiIpc\Signal\midevicesignal.c;F:\work\MiIot\MiIpc\MiIpc\Release\midevicesignal.obj
+F:\work\MiIot\MiIpc\MiIpc.cpp;F:\work\MiIot\MiIpc\MiIpc\Release\MiIpc.obj
+F:\work\MiIot\MiIpc\resample.c;F:\work\MiIot\MiIpc\MiIpc\Release\resample.obj
+F:\work\MiIot\MiIpc\Soc\Win32\GdiCapturer.cpp;F:\work\MiIot\MiIpc\MiIpc\Release\GdiCapturer.obj
+F:\work\MiIot\MiIpc\Soc\Win32\SocImp.c;F:\work\MiIot\MiIpc\MiIpc\Release\SocImp.obj
+F:\work\MiIot\MiIpc\Soc\Win32\winwarp.cpp;F:\work\MiIot\MiIpc\MiIpc\Release\winwarp.obj
+F:\work\MiIot\MiIpc\Soc\Win32\x264Encoder.cpp;F:\work\MiIot\MiIpc\MiIpc\Release\x264Encoder.obj

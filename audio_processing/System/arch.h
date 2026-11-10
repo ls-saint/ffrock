@@ -1,0 +1,37 @@
+#ifndef MI_AUDIO_PROCESSING_SYSTEM_ARCH_H_
+#define MI_AUDIO_PROCESSING_SYSTEM_ARCH_H_
+
+#if defined(_M_X64) || defined(__x86_64__)
+#define MINIBASE_ARCH_X86_FAMILY
+#define MINIBASE_ARCH_X86_64
+#define MINIBASE_ARCH_64_BITS
+#define MINIBASE_ARCH_LITTLE_ENDIAN
+#elif defined(_M_ARM64) || defined(__aarch64__)
+#define MINIBASE_ARCH_ARM_FAMILY
+#define MINIBASE_ARCH_ARM64
+#define MINIBASE_ARCH_64_BITS
+#define MINIBASE_ARCH_LITTLE_ENDIAN
+#elif defined(_M_IX86) || defined(__i386__)
+#define MINIBASE_ARCH_X86_FAMILY
+#define MINIBASE_ARCH_X86
+#define MINIBASE_ARCH_32_BITS
+#define MINIBASE_ARCH_LITTLE_ENDIAN
+#elif defined(__ARMEL__) || defined(__arm__) || defined(_M_ARM)
+#define MINIBASE_ARCH_ARM_FAMILY
+#define MINIBASE_ARCH_ARM
+#define MINIBASE_ARCH_32_BITS
+#define MINIBASE_ARCH_LITTLE_ENDIAN
+#elif defined(__MIPSEL__)
+#define MINIBASE_ARCH_MIPS_FAMILY
+#if defined(__LP64__)
+#define MINIBASE_ARCH_64_BITS
+#else
+#define MINIBASE_ARCH_32_BITS
+#endif
+#define MINIBASE_ARCH_LITTLE_ENDIAN
+#else
+#define MINIBASE_ARCH_32_BITS
+#define MINIBASE_ARCH_LITTLE_ENDIAN
+#endif
+
+#endif

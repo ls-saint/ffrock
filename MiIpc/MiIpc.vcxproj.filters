@@ -1,0 +1,270 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="GetOpt">
+      <UniqueIdentifier>{77957368-f231-401d-a9ed-fa57ff7c9ef2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Soc">
+      <UniqueIdentifier>{dccc5b54-16f3-48ab-be56-9376a9846fca}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Soc\Win32">
+      <UniqueIdentifier>{7fd818a5-23e5-4112-b789-b96d6536483c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Http">
+      <UniqueIdentifier>{0e3dc999-012e-474d-85b2-1f1dfe4df312}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Signal">
+      <UniqueIdentifier>{7624B44B-8545-4C6D-8632-E52F0C01B3BD}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Config">
+      <UniqueIdentifier>{0647EF46-1781-4CA9-B1F2-41B7283AB131}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="JSON">
+      <UniqueIdentifier>{456D9C3C-2FB0-41F1-A116-88E87609FF3B}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DevMsg">
+      <UniqueIdentifier>{143C8E08-AF89-4EA9-89D7-BB5AD63BCE5E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="App">
+      <UniqueIdentifier>{8F1F5836-F374-47C2-B6CC-18EA1EB99C17}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Broadcast">
+      <UniqueIdentifier>{0E420B36-3D6D-4537-A457-2637774CF8B0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Log">
+      <UniqueIdentifier>{32C46C3E-85B5-486D-9302-8D879BB41A11}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SdStorage">
+      <UniqueIdentifier>{1B76FB7E-CA15-40A1-A3E1-7DE4DF4D4B85}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Audio">
+      <UniqueIdentifier>{9E43F22F-14E5-4703-87B2-968724F6A1E7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Rtsp">
+      <UniqueIdentifier>{32616347-CFA2-4AF1-99B4-454A88C92D8D}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Network">
+      <UniqueIdentifier>{A09BEF0E-7FE1-40B9-AD95-3FB700B1B515}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="MiIpc.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="resample.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="GetOpt\getopt.c">
+      <Filter>GetOpt</Filter>
+    </ClCompile>
+    <ClCompile Include="Http\mihttpserver.c">
+      <Filter>Http</Filter>
+    </ClCompile>
+    <ClCompile Include="Http\miwebrtcbridge.c">
+      <Filter>Http</Filter>
+    </ClCompile>
+    <ClCompile Include="Http\mongoose.c">
+      <Filter>Http</Filter>
+    </ClCompile>
+    <ClCompile Include="Soc\Win32\GdiCapturer.cpp">
+      <Filter>Soc\Win32</Filter>
+    </ClCompile>
+    <ClCompile Include="Soc\Win32\SocImp.c">
+      <Filter>Soc\Win32</Filter>
+    </ClCompile>
+    <ClCompile Include="Soc\Win32\WinAudioCapturer.cpp">
+      <Filter>Soc\Win32</Filter>
+    </ClCompile>
+    <ClCompile Include="Soc\Win32\winwarp.cpp">
+      <Filter>Soc\Win32</Filter>
+    </ClCompile>
+    <ClCompile Include="Soc\Win32\x264Encoder.cpp">
+      <Filter>Soc\Win32</Filter>
+    </ClCompile>
+    <ClCompile Include="Signal\midevicesignal.c">
+      <Filter>Signal</Filter>
+    </ClCompile>
+    <ClCompile Include="Signal\midevicesignalconsumer.c">
+      <Filter>Signal</Filter>
+    </ClCompile>
+    <ClCompile Include="Config\miipcappconfig.c">
+      <Filter>Config</Filter>
+    </ClCompile>
+    <ClCompile Include="Config\miipccfgdb.c">
+      <Filter>Config</Filter>
+    </ClCompile>
+    <ClCompile Include="Config\miipcsignalconfig.c">
+      <Filter>Config</Filter>
+    </ClCompile>
+    <ClCompile Include="JSON\cJSON.c">
+      <Filter>JSON</Filter>
+    </ClCompile>
+    <ClCompile Include="DevMsg\midevmsg.c">
+      <Filter>DevMsg</Filter>
+    </ClCompile>
+    <ClCompile Include="App\miipcappinfo.c">
+      <Filter>App</Filter>
+    </ClCompile>
+    <ClCompile Include="App\miipcosd.c">
+      <Filter>App</Filter>
+    </ClCompile>
+    <ClCompile Include="Audio\miipc_aec.c">
+      <Filter>Audio</Filter>
+    </ClCompile>
+    <ClCompile Include="Audio\miipc_audio_process.c">
+      <Filter>Audio</Filter>
+    </ClCompile>
+    <ClCompile Include="Audio\miipc_g711.c">
+      <Filter>Audio</Filter>
+    </ClCompile>
+    <ClCompile Include="Broadcast\miipcbroadcast.c">
+      <Filter>Broadcast</Filter>
+    </ClCompile>
+    <ClCompile Include="Log\miipclog.c">
+      <Filter>Log</Filter>
+    </ClCompile>
+    <ClCompile Include="Network\miipcnetroute.c">
+      <Filter>Network</Filter>
+    </ClCompile>
+    <ClCompile Include="SdStorage\miipcsdstorage.c">
+      <Filter>SdStorage</Filter>
+    </ClCompile>
+    <ClCompile Include="SdMgr.c">
+      <Filter>SdStorage</Filter>
+    </ClCompile>
+    <ClCompile Include="Rtsp\miipcrtspserver.c">
+      <Filter>Rtsp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libmp4\source\libmp4.c">
+      <Filter>SdStorage</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libmp4\source\libmp4_writer.c">
+      <Filter>SdStorage</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libmp4\source\libmp4_reader.c">
+      <Filter>SdStorage</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libmp4\source\libmp4_h264.c">
+      <Filter>SdStorage</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libmp4\source\libmp4_h265.c">
+      <Filter>SdStorage</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libmp4\source\libmp4_g711.c">
+      <Filter>SdStorage</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="resample.h">
+      <Filter>源文件</Filter>
+    </ClInclude>
+    <ClInclude Include="GetOpt\getopt.h">
+      <Filter>GetOpt</Filter>
+    </ClInclude>
+    <ClInclude Include="Http\mihttpserver.h">
+      <Filter>Http</Filter>
+    </ClInclude>
+    <ClInclude Include="Http\miwebrtcbridge.h">
+      <Filter>Http</Filter>
+    </ClInclude>
+    <ClInclude Include="Http\mongoose.h">
+      <Filter>Http</Filter>
+    </ClInclude>
+    <ClInclude Include="Soc\Win32\GdiCapturer.h">
+      <Filter>Soc\Win32</Filter>
+    </ClInclude>
+    <ClInclude Include="Soc\Win32\SocImp.h">
+      <Filter>Soc\Win32</Filter>
+    </ClInclude>
+    <ClInclude Include="Soc\Win32\WinAudioCapturer.h">
+      <Filter>Soc\Win32</Filter>
+    </ClInclude>
+    <ClInclude Include="Soc\Win32\winwarp.h">
+      <Filter>Soc\Win32</Filter>
+    </ClInclude>
+    <ClInclude Include="Soc\Win32\x264Encoder.h">
+      <Filter>Soc\Win32</Filter>
+    </ClInclude>
+    <ClInclude Include="Soc\CommInfo.h">
+      <Filter>Soc</Filter>
+    </ClInclude>
+    <ClInclude Include="Soc\IHard.h">
+      <Filter>Soc</Filter>
+    </ClInclude>
+    <ClInclude Include="Signal\midevicesignal.h">
+      <Filter>Signal</Filter>
+    </ClInclude>
+    <ClInclude Include="Signal\midevicesignalconsumer.h">
+      <Filter>Signal</Filter>
+    </ClInclude>
+    <ClInclude Include="Config\miipcappconfig.h">
+      <Filter>Config</Filter>
+    </ClInclude>
+    <ClInclude Include="Config\miipccfgdb.h">
+      <Filter>Config</Filter>
+    </ClInclude>
+    <ClInclude Include="Config\miipcsignalconfig.h">
+      <Filter>Config</Filter>
+    </ClInclude>
+    <ClInclude Include="JSON\cJSON.h">
+      <Filter>JSON</Filter>
+    </ClInclude>
+    <ClInclude Include="DevMsg\midevmsg.h">
+      <Filter>DevMsg</Filter>
+    </ClInclude>
+    <ClInclude Include="App\miipcappinfo.h">
+      <Filter>App</Filter>
+    </ClInclude>
+    <ClInclude Include="App\miipcosd.h">
+      <Filter>App</Filter>
+    </ClInclude>
+    <ClInclude Include="Audio\miipc_audio_capture_stats.h">
+      <Filter>Audio</Filter>
+    </ClInclude>
+    <ClInclude Include="Audio\miipc_aec.h">
+      <Filter>Audio</Filter>
+    </ClInclude>
+    <ClInclude Include="Audio\miipc_audio_process.h">
+      <Filter>Audio</Filter>
+    </ClInclude>
+    <ClInclude Include="Audio\miipc_g711.h">
+      <Filter>Audio</Filter>
+    </ClInclude>
+    <ClInclude Include="Broadcast\miipcbroadcast.h">
+      <Filter>Broadcast</Filter>
+    </ClInclude>
+    <ClInclude Include="Log\miipclog.h">
+      <Filter>Log</Filter>
+    </ClInclude>
+    <ClInclude Include="Network\miipcnetroute.h">
+      <Filter>Network</Filter>
+    </ClInclude>
+    <ClInclude Include="miipc.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="SdStorage\miipcsdstorage.h">
+      <Filter>SdStorage</Filter>
+    </ClInclude>
+    <ClInclude Include="SdMgr.h">
+      <Filter>SdStorage</Filter>
+    </ClInclude>
+    <ClInclude Include="Rtsp\miipcrtspserver.h">
+      <Filter>Rtsp</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libmp4\include\libmp4.h">
+      <Filter>SdStorage</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

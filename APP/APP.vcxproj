@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{b6af3ea3-7252-4413-98ee-9c4c667e97a1}</ProjectGuid>
+    <RootNamespace>APP</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <IntDir>$(Platform)\$(Configuration)\APP\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <IntDir>$(Platform)\$(Configuration)\APP\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+    <IntDir>$(Platform)\$(Configuration)\APP\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+    <IntDir>$(Platform)\$(Configuration)\APP\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;_CRT_SECURE_NO_WARNINGS;FPM_64BIT;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>.;../MiIpc;../MiIpc/Soc;../audio_processing/include;../uNet;../uKcp;../OtherLib/x264;../libyuv/include;../libmov/include;../MiBase/include;../MiBase/include/socket;../MiOnvif/include;../MiRtc/include;../MiRtc/src;../MiRtc/src/p2p;../MiRtc/src/p2p/base;../MiRtc/src/rtp/include;../mbedtls/include;../libsrtp/include;../libsrtp/config;../libsrtp/crypto/include</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>libx264.lib;ole32.lib;winmm.lib;MiSig.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>../OtherLib/x264/libs/32bit;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+    <PostBuildEvent>
+      <Command>copy /Y "$(ProjectDir)..\OtherLib\x264\libs\32bit\libx264.dll" "$(OutDir)"</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;FPM_64BIT;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>.;../MiIpc;../MiIpc/Soc;../audio_processing/include;../uNet;../uKcp;../OtherLib/x264;../libyuv/include;../libmov/include;../MiBase/include;../MiBase/include/socket;../MiOnvif/include;../MiRtc/include;../MiRtc/src;../MiRtc/src/p2p;../MiRtc/src/p2p/base;../MiRtc/src/rtp/include;../mbedtls/include;../libsrtp/include;../libsrtp/config;../libsrtp/crypto/include</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>libx264.lib;ole32.lib;winmm.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>../OtherLib/x264/libs/32bit;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+    <PostBuildEvent>
+      <Command>copy /Y "$(ProjectDir)..\OtherLib\x264\libs\32bit\libx264.dll" "$(OutDir)"</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;FPM_64BIT;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>.;../MiIpc;../MiIpc/Soc;../audio_processing/include;../uNet;../uKcp;../libmov/include;../MiBase/include;../MiBase/include/socket;../MiOnvif/include;../MiRtc/include;../MiRtc/src;../MiRtc/src/p2p;../MiRtc/src/p2p/base;../MiRtc/src/rtp/include;../mbedtls/include;../libsrtp/include;../libsrtp/config;../libsrtp/crypto/include;../MiSig/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>MiIpc.lib;MiOnvif.lib;MiSig.lib;audio_processing.lib;uNet.lib;uKcp.lib;libmov.lib;ole32.lib;winmm.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>../x64/debug</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>.;../MiIpc;../MiIpc/Soc;../audio_processing/include;../uNet;../uKcp;../libmov/include;../MiBase/include;../MiBase/include/socket;../MiOnvif/include;../MiRtc/include;../MiRtc/src;../MiRtc/src/p2p;../MiRtc/src/p2p/base;../MiRtc/src/rtp/include;../mbedtls/include;../libsrtp/include;../libsrtp/config;../libsrtp/crypto/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>MiIpc.lib;MiOnvif.lib;audio_processing.lib;uNet.lib;uKcp.lib;libmov.lib;ole32.lib;winmm.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>../MiIpc/x64/Release;../MiOnvif/x64/Release;../audio_processing/x64/Release;../uNet/x64/Release;../uKcp/x64/Release;../libmov/x64/Release;../MiBase/x64/Release;../MiRtc/x64/Release;../mbedtls/x64/Release;../libsrtp/x64/Release;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="APP.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\MiIpc\miipc.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\MiIpc\MiIpc.vcxproj">
+      <Project>{0bc51f9e-e2fc-495a-a4dd-20739244cced}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\MiOnvif\MiOnvif.vcxproj">
+      <Project>{f5ae17e3-3b6c-4b7b-9a84-d89e9af7c8e4}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\MiBase\MiBase.vcxproj">
+      <Project>{5406d60b-2659-49e1-8f36-24869b90e8aa}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\uKcp\uKcp.vcxproj">
+      <Project>{a74801f1-d00c-4a15-8943-9742161ca1da}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\uNet\uNet.vcxproj">
+      <Project>{56ae4319-5a62-4609-9a20-211d8c7411f2}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\libyuv\libyuv.vcxproj">
+      <Project>{D1CB2FEC-F346-485A-9255-B46BA6698EC9}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\MiRtc\MiRtc.vcxproj">
+      <Project>{21a77664-0983-4bfb-b246-c318b25224fd}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\mbedtls\mbedtls.vcxproj">
+      <Project>{9f4f7cd1-0f9f-42d0-93a8-3e5808bacecc}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\libsrtp\libsrtp.vcxproj">
+      <Project>{7702579e-32b2-406c-9552-749efdb2cfea}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\libmov\libmov.vcxproj">
+      <Project>{d5106098-7b37-4de0-b8fb-233bbabc2d72}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\audio_processing\audio_processing.vcxproj">
+      <Project>{946721ae-e13e-4718-bc53-56493a7603fd}</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

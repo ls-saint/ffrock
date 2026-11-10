@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{0bc51f9e-e2fc-495a-a4dd-20739244cced}</ProjectGuid>
+    <RootNamespace>MiIpc</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <IntDir>$(Platform)\$(Configuration)\MiIpc\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <IntDir>$(Platform)\$(Configuration)\MiIpc\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+    <IntDir>$(Platform)\$(Configuration)\MiIpc\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+    <IntDir>$(Platform)\$(Configuration)\MiIpc\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;_CRT_SECURE_NO_WARNINGS;FPM_64BIT;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>./Audio;./Soc;../audio_processing/include;../uNet;../uKcp;../OtherLib/x264;../libyuv/include;../libmov/include;../libmp4/include;../MiBase/include;../MiBase/include/socket;../MiOnvif/include;../MiRtc/include;../MiRtc/src;../MiRtc/src/p2p;../MiRtc/src/p2p/base;../MiRtc/src/rtp/include;../mbedtls/include;../libsrtp/include;../libsrtp/config;../libsrtp/crypto/include;./</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>audio_processing.lib;uNet.lib;uKcp.lib;libmov.lib;libx264.lib;MiBase.lib;MiRtc.lib;mbedtls.lib;libsrtp.lib;ole32.lib;winmm.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>../audio_processing/Debug;../uNet/Debug;../uKcp/Debug;../libyuv/Debug;../MiBase/Debug;../MiRtc/Debug;../mbedtls/Debug;../libsrtp/Debug;../debug;../OtherLib/x264/libs/32bit</AdditionalLibraryDirectories>
+    </Link>
+    <PostBuildEvent>
+      <Command>copy /Y "$(ProjectDir)..\OtherLib\x264\libs\32bit\libx264.dll" "$(OutDir)"</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;FPM_64BIT;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(ProjectDir);./Audio;./Soc;../audio_processing/include;../uNet;../uKcp;../OtherLib/x264;../libyuv/include;../libmov/include;../libmp4/include;../MiBase/include;../MiBase/include/socket;../MiOnvif/include;../MiRtc/include;../MiRtc/src;../MiRtc/src/p2p;../MiRtc/src/p2p/base;../MiRtc/src/rtp/include;../mbedtls/include;../libsrtp/include;../libsrtp/config;../libsrtp/crypto/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>../audio_processing/Release;../uNet/Release;../uKcp/Release;../libmov/Release;../libyuv/Release;../MiBase/Release;../MiRtc/Release;../mbedtls/Release;../libsrtp/Release;../OtherLib/x264/libs/32bit;../release</AdditionalLibraryDirectories>
+      <AdditionalDependencies>audio_processing.lib;uNet.lib;uKcp.lib;libmov.lib;libx264.lib;ole32.lib;winmm.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <PostBuildEvent>
+      <Command>copy /Y "$(ProjectDir)..\OtherLib\x264\libs\32bit\libx264.dll" "$(OutDir)"</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_LIB;FPM_64BIT;_CRT_SECURE_NO_WARNINGS;WIN32;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>./Audio;./Soc;../audio_processing/include;../uNet;../uKcp;../OtherLib/x264;../OtherLib/x265/win/include;../libyuv/include;../libmov/include;../libmp4/include;../MiBase/include;../MiBase/include/socket;../MiOnvif/include;../MiRtc/include;../MiRtc/src;../MiRtc/src/p2p;../MiRtc/src/p2p/base;../MiRtc/src/rtp/include;../mbedtls/include;../libsrtp/include;../libsrtp/config;../libsrtp/crypto/include;./;../MiSig/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>../x64/debug;../audio_processing/x64/Debug;../uNet/x64/Debug;../uKcp/x64/Debug;../libmov/x64/Debug;../libyuv/x64/Debug;../MiBase/x64/Debug;../MiRtc/x64/Debug;../mbedtls/x64/Debug;../libsrtp/x64/Debug;../OtherLib/x264/libs/x64</AdditionalLibraryDirectories>
+      <AdditionalDependencies>audio_processing.lib;uNet.lib;uKcp.lib;libmov.lib;libyuv.lib;libx264.lib;MiBase.lib;MiRtc.lib;mbedtls.lib;libsrtp.lib;ole32.lib;winmm.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>./Audio;./Soc;../audio_processing/include;../uNet;../uKcp;../OtherLib/x264;../OtherLib/x265/win/include;../libyuv/include;../libmov/include;../libmp4/include;../MiBase/include;../MiBase/include/socket;../MiOnvif/include;../MiRtc/include;../MiRtc/src;../MiRtc/src/p2p;../MiRtc/src/p2p/base;../MiRtc/src/rtp/include;../mbedtls/include;../libsrtp/include;../libsrtp/config;../libsrtp/crypto/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>../audio_processing/x64/Release;../uNet/x64/Release;../uKcp/x64/Release;../libmov/x64/Release;../libyuv/x64/Release;../MiBase/x64/Release;../MiRtc/x64/Release;../mbedtls/x64/Release;../libsrtp/x64/Release;../OtherLib/x264/libs/x64;../x64/release;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>audio_processing.lib;uNet.lib;uKcp.lib;libmov.lib;libyuv.lib;libx264.lib;MiBase.lib;MiRtc.lib;mbedtls.lib;libsrtp.lib;ole32.lib;winmm.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="App\miipcappinfo.c" />
+    <ClCompile Include="App\miipcosd.c" />
+    <ClCompile Include="Audio\miipc_aec.c" />
+    <ClCompile Include="Audio\miipc_audio_process.c" />
+    <ClCompile Include="Audio\miipc_g711.c" />
+    <ClCompile Include="Broadcast\miipcbroadcast.c" />
+    <ClCompile Include="Config\miipcappconfig.c" />
+    <ClCompile Include="Config\miipccfgdb.c" />
+    <ClCompile Include="Config\miipcsignalconfig.c" />
+    <ClCompile Include="DevMsg\midevmsg.c" />
+    <ClCompile Include="GetOpt\getopt.c" />
+    <ClCompile Include="Http\mihttpserver.c" />
+    <ClCompile Include="Http\miwebrtcbridge.c" />
+    <ClCompile Include="Http\mongoose.c" />
+    <ClCompile Include="JSON\cJSON.c" />
+    <ClCompile Include="Log\miipclog.c" />
+    <ClCompile Include="Network\miipcnetroute.c" />
+    <ClCompile Include="Rtsp\miipcrtspserver.c" />
+    <ClCompile Include="SdMgr.c" />
+    <ClCompile Include="SdStorage\miipcsdstorage.c" />
+    <ClCompile Include="..\libmp4\source\libmp4.c" />
+    <ClCompile Include="..\libmp4\source\libmp4_writer.c" />
+    <ClCompile Include="..\libmp4\source\libmp4_reader.c" />
+    <ClCompile Include="..\libmp4\source\libmp4_h264.c" />
+    <ClCompile Include="..\libmp4\source\libmp4_h265.c" />
+    <ClCompile Include="..\libmp4\source\libmp4_g711.c" />
+    <ClCompile Include="Signal\midevicesignal.c" />
+    <ClCompile Include="Signal\midevicesignalconsumer.c" />
+    <ClCompile Include="MiIpc.c" />
+    <ClCompile Include="resample.c" />
+    <ClCompile Include="Soc\Win32\GdiCapturer.cpp" />
+    <ClCompile Include="Soc\Win32\SocImp.c" />
+    <ClCompile Include="Soc\Win32\WinAudioCapturer.cpp" />
+    <ClCompile Include="Soc\Win32\winwarp.cpp" />
+    <ClCompile Include="Soc\Win32\x264Encoder.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="App\miipcappinfo.h" />
+    <ClInclude Include="App\miipcosd.h" />
+    <ClInclude Include="Audio\miipc_audio_capture_stats.h" />
+    <ClInclude Include="Audio\miipc_aec.h" />
+    <ClInclude Include="Audio\miipc_audio_process.h" />
+    <ClInclude Include="Audio\miipc_g711.h" />
+    <ClInclude Include="Broadcast\miipcbroadcast.h" />
+    <ClInclude Include="Config\miipcappconfig.h" />
+    <ClInclude Include="Config\miipccfgdb.h" />
+    <ClInclude Include="Config\miipcsignalconfig.h" />
+    <ClInclude Include="DevMsg\midevmsg.h" />
+    <ClInclude Include="GetOpt\getopt.h" />
+    <ClInclude Include="Http\mihttpserver.h" />
+    <ClInclude Include="Http\miwebrtcbridge.h" />
+    <ClInclude Include="Http\mongoose.h" />
+    <ClInclude Include="JSON\cJSON.h" />
+    <ClInclude Include="Log\miipclog.h" />
+    <ClInclude Include="Network\miipcnetroute.h" />
+    <ClInclude Include="miipc.h" />
+    <ClInclude Include="Rtsp\miipcrtspserver.h" />
+    <ClInclude Include="SdMgr.h" />
+    <ClInclude Include="SdStorage\miipcsdstorage.h" />
+    <ClInclude Include="..\libmp4\include\libmp4.h" />
+    <ClInclude Include="Signal\midevicesignal.h" />
+    <ClInclude Include="Signal\midevicesignalconsumer.h" />
+    <ClInclude Include="resample.h" />
+    <ClInclude Include="Soc\CommInfo.h" />
+    <ClInclude Include="Soc\IHard.h" />
+    <ClInclude Include="Soc\Win32\GdiCapturer.h" />
+    <ClInclude Include="Soc\Win32\SocImp.h" />
+    <ClInclude Include="Soc\Win32\WinAudioCapturer.h" />
+    <ClInclude Include="Soc\Win32\winwarp.h" />
+    <ClInclude Include="Soc\Win32\x264Encoder.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\MiBase\MiBase.vcxproj">
+      <Project>{5406d60b-2659-49e1-8f36-24869b90e8aa}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\libyuv\libyuv.vcxproj">
+      <Project>{D1CB2FEC-F346-485A-9255-B46BA6698EC9}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\mbedtls\mbedtls.vcxproj">
+      <Project>{9f4f7cd1-0f9f-42d0-93a8-3e5808bacecc}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\audio_processing\audio_processing.vcxproj">
+      <Project>{946721ae-e13e-4718-bc53-56493a7603fd}</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

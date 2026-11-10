@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Source Files\System">
+      <UniqueIdentifier>{7D52FF19-75F8-4AA5-B3E2-A04B2AE87A7A}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\signal_processing">
+      <UniqueIdentifier>{8218B81A-B717-47F8-86C2-7D04A9D45F56}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\utility">
+      <UniqueIdentifier>{EE8BBF86-56C2-4987-BF48-E80440F116A5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\aecm">
+      <UniqueIdentifier>{9E1C7F00-1284-4C92-9F18-28B83D328F1E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\ns">
+      <UniqueIdentifier>{F07DE28E-094D-487B-9D28-7D58651F474D}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4B04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Header Files\include">
+      <UniqueIdentifier>{62F79D53-4B85-40A9-A4F1-621AA74262A9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\System">
+      <UniqueIdentifier>{BB6492E1-6E37-4D6E-B08D-A32925EE689C}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\aecm">
+      <UniqueIdentifier>{D5DF905B-B337-4BEF-A8FE-3D2B53881670}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\ns">
+      <UniqueIdentifier>{E7A4631D-5105-4D38-B29E-6A3C38444D3E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\signal_processing">
+      <UniqueIdentifier>{8337AA33-1497-4E71-A061-45B55B83F7E6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\signal_processing\include">
+      <UniqueIdentifier>{3A1D225B-9254-4424-95AC-55F4C6C5C6F2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\utility">
+      <UniqueIdentifier>{C044F8F1-F9CD-4424-BE8F-3E2D41DF2ABF}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4C08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="mi_audio_processor.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="fft4g.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ring_buffer.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="System\cpu_features.c">
+      <Filter>Source Files\System</Filter>
+    </ClCompile>
+    <ClCompile Include="signal_processing\complex_bit_reverse.c">
+      <Filter>Source Files\signal_processing</Filter>
+    </ClCompile>
+    <ClCompile Include="signal_processing\complex_fft.c">
+      <Filter>Source Files\signal_processing</Filter>
+    </ClCompile>
+    <ClCompile Include="signal_processing\copy_set_operations.c">
+      <Filter>Source Files\signal_processing</Filter>
+    </ClCompile>
+    <ClCompile Include="signal_processing\cross_correlation.c">
+      <Filter>Source Files\signal_processing</Filter>
+    </ClCompile>
+    <ClCompile Include="signal_processing\division_operations.c">
+      <Filter>Source Files\signal_processing</Filter>
+    </ClCompile>
+    <ClCompile Include="signal_processing\downsample_fast.c">
+      <Filter>Source Files\signal_processing</Filter>
+    </ClCompile>
+    <ClCompile Include="signal_processing\energy.c">
+      <Filter>Source Files\signal_processing</Filter>
+    </ClCompile>
+    <ClCompile Include="signal_processing\get_scaling_square.c">
+      <Filter>Source Files\signal_processing</Filter>
+    </ClCompile>
+    <ClCompile Include="signal_processing\min_max_operations.c">
+      <Filter>Source Files\signal_processing</Filter>
+    </ClCompile>
+    <ClCompile Include="signal_processing\randomization_functions.c">
+      <Filter>Source Files\signal_processing</Filter>
+    </ClCompile>
+    <ClCompile Include="signal_processing\real_fft.c">
+      <Filter>Source Files\signal_processing</Filter>
+    </ClCompile>
+    <ClCompile Include="signal_processing\spl_init.c">
+      <Filter>Source Files\signal_processing</Filter>
+    </ClCompile>
+    <ClCompile Include="signal_processing\spl_inl.c">
+      <Filter>Source Files\signal_processing</Filter>
+    </ClCompile>
+    <ClCompile Include="signal_processing\spl_sqrt_floor.c">
+      <Filter>Source Files\signal_processing</Filter>
+    </ClCompile>
+    <ClCompile Include="signal_processing\vector_scaling_operations.c">
+      <Filter>Source Files\signal_processing</Filter>
+    </ClCompile>
+    <ClCompile Include="utility\delay_estimator.c">
+      <Filter>Source Files\utility</Filter>
+    </ClCompile>
+    <ClCompile Include="utility\delay_estimator_wrapper.c">
+      <Filter>Source Files\utility</Filter>
+    </ClCompile>
+    <ClCompile Include="aecm\aecm_core.c">
+      <Filter>Source Files\aecm</Filter>
+    </ClCompile>
+    <ClCompile Include="aecm\aecm_core_c.c">
+      <Filter>Source Files\aecm</Filter>
+    </ClCompile>
+    <ClCompile Include="aecm\echo_control_mobile.c">
+      <Filter>Source Files\aecm</Filter>
+    </ClCompile>
+    <ClCompile Include="ns\noise_suppression.c">
+      <Filter>Source Files\ns</Filter>
+    </ClCompile>
+    <ClCompile Include="ns\noise_suppression_x.c">
+      <Filter>Source Files\ns</Filter>
+    </ClCompile>
+    <ClCompile Include="ns\ns_core.c">
+      <Filter>Source Files\ns</Filter>
+    </ClCompile>
+    <ClCompile Include="ns\nsx_core.c">
+      <Filter>Source Files\ns</Filter>
+    </ClCompile>
+    <ClCompile Include="ns\nsx_core_c.c">
+      <Filter>Source Files\ns</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\mi_audio_processing.h">
+      <Filter>Header Files\include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\mi_audio_processor.h">
+      <Filter>Header Files\include</Filter>
+    </ClInclude>
+    <ClInclude Include="checks.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="fft4g.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ring_buffer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="sanitizer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="System\arch.h">
+      <Filter>Header Files\System</Filter>
+    </ClInclude>
+    <ClInclude Include="System\cpu_features.h">
+      <Filter>Header Files\System</Filter>
+    </ClInclude>
+    <ClInclude Include="aecm\aecm_core.h">
+      <Filter>Header Files\aecm</Filter>
+    </ClInclude>
+    <ClInclude Include="aecm\aecm_defines.h">
+      <Filter>Header Files\aecm</Filter>
+    </ClInclude>
+    <ClInclude Include="aecm\echo_control_mobile.h">
+      <Filter>Header Files\aecm</Filter>
+    </ClInclude>
+    <ClInclude Include="ns\defines.h">
+      <Filter>Header Files\ns</Filter>
+    </ClInclude>
+    <ClInclude Include="ns\noise_suppression.h">
+      <Filter>Header Files\ns</Filter>
+    </ClInclude>
+    <ClInclude Include="ns\noise_suppression_x.h">
+      <Filter>Header Files\ns</Filter>
+    </ClInclude>
+    <ClInclude Include="ns\ns_core.h">
+      <Filter>Header Files\ns</Filter>
+    </ClInclude>
+    <ClInclude Include="ns\nsx_core.h">
+      <Filter>Header Files\ns</Filter>
+    </ClInclude>
+    <ClInclude Include="ns\nsx_defines.h">
+      <Filter>Header Files\ns</Filter>
+    </ClInclude>
+    <ClInclude Include="ns\windows_private.h">
+      <Filter>Header Files\ns</Filter>
+    </ClInclude>
+    <ClInclude Include="signal_processing\complex_fft_tables.h">
+      <Filter>Header Files\signal_processing</Filter>
+    </ClInclude>
+    <ClInclude Include="signal_processing\dot_product_with_scale.h">
+      <Filter>Header Files\signal_processing</Filter>
+    </ClInclude>
+    <ClInclude Include="signal_processing\include\compile_assert_c.h">
+      <Filter>Header Files\signal_processing\include</Filter>
+    </ClInclude>
+    <ClInclude Include="signal_processing\include\real_fft.h">
+      <Filter>Header Files\signal_processing\include</Filter>
+    </ClInclude>
+    <ClInclude Include="signal_processing\include\signal_processing_library.h">
+      <Filter>Header Files\signal_processing\include</Filter>
+    </ClInclude>
+    <ClInclude Include="signal_processing\include\spl_inl.h">
+      <Filter>Header Files\signal_processing\include</Filter>
+    </ClInclude>
+    <ClInclude Include="utility\delay_estimator.h">
+      <Filter>Header Files\utility</Filter>
+    </ClInclude>
+    <ClInclude Include="utility\delay_estimator_internal.h">
+      <Filter>Header Files\utility</Filter>
+    </ClInclude>
+    <ClInclude Include="utility\delay_estimator_wrapper.h">
+      <Filter>Header Files\utility</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Makefile" />
+    <None Include="README.md" />
+  </ItemGroup>
+</Project>
